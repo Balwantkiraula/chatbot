@@ -152,7 +152,7 @@ const Bot = () => {
         setInput("")
         
         try{
-          const res = await axios.post("http://localhost:8000/api/chatbot/message",{
+          const res = await axios.post("https://chatbot-zhdl.onrender.com",{
             text : userInput
            })
            if(res.status === 200){
